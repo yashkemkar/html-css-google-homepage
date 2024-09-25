@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #0f172a;
+
+}
+
+body {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+.google-header {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0.8rem 1.2rem;
+    gap: 1rem;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text-link,
+footer a ,
+.button-grid a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-link:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.nav-container-second .text-link {
+    display:none
+}
+
+.icon-link {
+    font-size: 1rem;
+    color: inherit;
+    width: 24px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.icon-link:hover {
+    background: rgb(235, 235, 235);
+}
+
+.img-button {
+    border: none;
+    background: transparent;    
+}
+
+.img-button img {
+    width: 30px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.title-text {
+    font-size: 5rem;
+}
+
+.input-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid rgb(220, 220, 220);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.input-bar:hover,
+.input-bar:focus-within {
+    box-shadow: 0 0 4px 1px rgb(200, 200, 200);
+}
+
+.input-bar div {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.input-icon {
+    background: transparent;
+    border: none;
+    border-radius: 100%;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.input-icon:hover {
+    opacity: 0.6;
+    cursor:pointer;
+}
+
+.button-grid {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-grid button {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+}
+/*This is how you insert comments in css*/
+.button-grid button:hover {
+    border: 1px solid rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+.language-text {
+    font-size: 0.8rem;
+}
+
+.language-link {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.language-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(245, 245, 245);
+    font-size: 0.58rem;
+}
+
+footer > div {
+    padding: 0.5rem;
+}
+
+.country {
+    padding: 1rem 2rem;
+    font-size: 0.9rem
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem  1rem;
+    font-size: 0.85rem;
+}
+
+@media (min-width: 640px) {
+
+    .footer-grid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .nav-container-second .text-link {
+        display:block;
+    }
+}
+
